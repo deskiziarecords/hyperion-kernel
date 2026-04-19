@@ -212,8 +212,10 @@ def load_config(path: str) -> Config:
     # Map specific keys if names differ slightly
     if "max_daily_loss" in data:
         cfg["max_daily_loss_pct"] = data["max_daily_loss"]
+        del cfg["max_daily_loss"]  # Remove the old key to avoid conflict
         
     return Config(**cfg)
+    
 
 # =============================================================================
 # PATTERN RECOGNITION (pattern.c)
