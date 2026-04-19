@@ -1,0 +1,22 @@
+{
+  "asset":          "USD_CAD",
+  "api_key":        "YOUR_OANDA_API_KEY_HERE",
+  "account_id":     "YOUR_ACCOUNT_ID_HERE",
+  "practice":       true,
+  "paper":          true,
+  "capital":        10000.0,
+  "risk_pct":       1.0,
+
+  "entropy_thresh": 0.60,
+  "min_confidence": 0.60,
+  "min_bias":       0.10,
+  "max_energy":     0.50,
+  "curl_thresh":    0.80,
+  "min_delta":      500.0,
+  "max_daily_loss": 5.0,
+
+  "log_level":      1,
+  "log_path":       "logs/smart.log",
+
+  "asset_bias":     0
+}
